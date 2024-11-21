@@ -1,14 +1,11 @@
 package com.evact.trustalent.dto.response;
 
-import com.evact.trustalent.common.Constants;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.List;
 
 @Data
@@ -19,10 +16,6 @@ public class AuthenticationResponse {
 
 	@JsonProperty("token")
 	private String token;
-
-	@JsonFormat(pattern = Constants.DATE_TIME_FORMAT)
-	@JsonProperty("token_expired_at")
-	private Date tokenExpiredAt;
 
 	@JsonProperty("user_info")
 	private UserInfo userInfo;

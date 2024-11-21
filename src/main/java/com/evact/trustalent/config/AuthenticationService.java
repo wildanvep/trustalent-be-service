@@ -43,7 +43,6 @@ public class AuthenticationService extends BaseService {
 
         return AuthenticationResponse.builder()
                 .token(jwtToken.getToken())
-                .tokenExpiredAt(jwtToken.getTokenExpiredAt())
                 .userInfo(
                         AuthenticationResponse.UserInfo.builder()
                                 .username(user.getUsername())
@@ -70,7 +69,7 @@ public class AuthenticationService extends BaseService {
             throw new BadRequestException("Invalid token!");
         }
 
-        return AuthenticationResponse.builder().token(jwtToken.getToken()).tokenExpiredAt(jwtToken.getTokenExpiredAt()).build();
+        return AuthenticationResponse.builder().token(jwtToken.getToken()).build();
     }
 
     private void saveUserToken(UserEntity user, String jwtToken) {
