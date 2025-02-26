@@ -22,6 +22,9 @@ This project serves as a solid foundation for developing **secure and scalable a
 
 ---
 
+## 🔗 Credits
+This boilerplate was created by wildanvep.
+
 ## 🚀 Getting Started  
 
 Clone the repository and set up your environment variables to get started:  
@@ -29,3 +32,6 @@ Clone the repository and set up your environment variables to get started:
 ```sh
 git clone https://github.com/your-username/trustalent-be-service.git
 cd trustalent-be-service
+
+
+
