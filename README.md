@@ -1,4 +1,5 @@
 **Trustalent BE Service**
+
 Trustalent BE Service is a Spring Boot backend boilerplate with built-in JWT authentication and multi-tenant support. This project serves as a solid foundation for developing secure and scalable applications following best practices for CRUD operations.
 
 ✨ Features
